@@ -6,11 +6,13 @@
 
 [![image](https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg)](https://pypi.python.org/pypi/{{ cookiecutter.project_slug }})
 
-[![image](https://img.shields.io/travis/%7B%7B%20cookiecutter.github_username%20%7D%7D/%7B%7B%20cookiecutter.project_slug%20%7D%7D.svg)](https://travis-ci.com/%7B%7B%20cookiecutter.github_username%20%7D%7D/%7B%7B%20cookiecutter.project_slug%20%7D%7D)
-
-[![Documentation Status](https://readthedocs.org/projects/%7B%7B%20cookiecutter.project_slug%20%7C%20replace(%22_%22,%20%22-%22)%20%7D%7D/badge/?version=latest)](https://%7B%7B%20cookiecutter.project_slug%20%7C%20replace(%22_%22,%20%22-%22)%20%7D%7D.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/{{ cookiecutter.project_slug }}/badge/?version=latest)](https://ldrb.readthedocs.io/en/latest/?badge=latest)
 
 {%- endif %}
+
+![CI](https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/workflows/CI/badge.svg)
+
+
 
 {{ cookiecutter.project_short_description }}
 
