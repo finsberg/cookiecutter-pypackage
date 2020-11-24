@@ -5,10 +5,8 @@ watchdog
 flake8
 Sphinx
 twine
-{% if cookiecutter.command_line_interface|lower == 'click' -%}
-Click==7.0{% endif %}
+{% if cookiecutter.command_line_interface|lower == 'click' -%}Click==7.0{% endif %}
 pytest
-pytest-runner
 pytest-cov
 black
 mypy

@@ -62,7 +62,7 @@ docs: ## generate Sphinx HTML documentation, including API docs
 	pandoc README.md -o docs/readme.rst
 	pandoc HISTORY.md -o docs/history.rst
 	pandoc CONTRIBUTING.md -o docs/contributing.rst
-	{% if cookiecutter.create_author_file == 'y' -%}pandoc AUTHORS.md -o docs/authors.rst{% endif -%}
+	pandoc AUTHORS.md -o docs/authors.rst
 	sphinx-apidoc -o docs/ {{ cookiecutter.project_slug }}
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
