@@ -62,12 +62,13 @@ Ready to contribute? Here\'s how to set up [{{ cookiecutter.project_slug
     $ git clone git@github.com:your_name_here/{{ cookiecutter.project_slug }}.git
     ```
 
-3.  Install your local copy into a virtualenv. 
+3.  Install your local copy into a virtual environment. 
 
     ``` {.shell}
-    $ mkvirtualenv {{ cookiecutter.project_slug }}
     $ cd {{ cookiecutter.project_slug }}/
-    $ python setup.py develop
+    $ python -m venv venv
+    $ source venv/bin/activate
+    $ python -m pip install -e .
     ```
 
 4.  Create a branch for local development:
@@ -78,14 +79,14 @@ Ready to contribute? Here\'s how to set up [{{ cookiecutter.project_slug
 
     Now you can make your changes locally.
 
-5.  When you\'re done making changes, check that your changes pass
-    flake8 and the tests, including testing other Python versions with
+5.  When you're done making changes, check that your changes pass
+    flake8, static type checking and the tests, including testing other Python versions with
     tox:
 
     ``` {.shell}
-    $ flake8 {{ cookiecutter.project_slug }} tests
-    $ python setup.py test or pytest
-    $ tox
+    $ make lint
+    $ make type
+    $ make test
     ```
 
     To get flake8 and tox, just pip install them into your virtualenv.
@@ -117,7 +118,7 @@ Before you submit a pull request, check that it meets these guidelines:
 To run a subset of tests:
 
 ``` {.shell}
-$ pytest [tests.test](){{ cookiecutter.project_slug }}
+$ python -m pytest [tests.test](){{ cookiecutter.project_slug }}
 ```
 
 

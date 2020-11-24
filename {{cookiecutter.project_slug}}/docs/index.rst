@@ -8,10 +8,17 @@ Welcome to {{ cookiecutter.project_name }}'s documentation!
    readme
    installation
    usage
-   modules
    contributing
    authors
    history
+
+Programmers reference
+=====================
+
+.. toctree::
+   :maxdepth: 2
+
+   modules
 
 Indices and tables
 ==================

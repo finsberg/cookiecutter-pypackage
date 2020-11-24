@@ -67,7 +67,7 @@ docs: ## generate Sphinx HTML documentation, including API docs
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	# $(BROWSER) docs/_build/html/index.html
-	# python -m http.server --directory docs/build/html
+	# python -m http.server --directory docs/_build/html
 
 servedocs: docs ## compile the docs watching for changes
 	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .

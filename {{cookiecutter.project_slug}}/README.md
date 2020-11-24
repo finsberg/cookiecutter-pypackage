@@ -21,11 +21,11 @@
 * Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
 {% endif %}
 
-# Features
+## Features
 
 -   TODO
 
-# Credits
+## Credits
 
 This package was created with
 [Cookiecutter](https://github.com/audreyr/cookiecutter) and the
