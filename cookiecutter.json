@@ -8,8 +8,8 @@
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.1.0",
   "command_line_interface": [
-    "Click",
     "Argparse",
+    "Click",
     "No command-line interface"
   ],
   "create_author_file": "y",
