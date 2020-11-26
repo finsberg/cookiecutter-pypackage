@@ -12,8 +12,7 @@ from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
 from {{ cookiecutter.project_slug }} import cli
 {%- endif %}
 
-
-
+print({{ cookiecutter.project_slug }})
 
 @pytest.fixture
 def response():
