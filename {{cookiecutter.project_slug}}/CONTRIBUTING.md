@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ### Report Bugs
 
-Report bugs at <https://github.com/>{{ cookiecutter.github_username}}/{{ cookiecutter.project_slug }}/issues.
+Report bugs at <https://github.com/{{ cookiecutter.github_username}}/{{ cookiecutter.project_slug }}/issues>.
 
 If you are reporting a bug, please include:
 
@@ -38,7 +38,7 @@ docstrings, or even on the web in blog posts, articles, and such.
 ### Submit Feedback
 
 The best way to send feedback is to file an issue at
-<https://github.com/>{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues.
+<https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/issues>.
 
 If you are proposing a feature:
 
@@ -50,10 +50,9 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here\'s how to set up [{{ cookiecutter.project_slug
-}}]{.title-ref} for local development.
+Ready to contribute? Here's how to set up {{ cookiecutter.project_slug }} for local development.
 
-1.  Fork the [{{ cookiecutter.project_slug }}]{.title-ref} repo on
+1.  Fork the {{ cookiecutter.project_slug }} repo on
     GitHub.
 
 2.  Clone your fork locally:
@@ -109,16 +108,15 @@ Before you submit a pull request, check that it meets these guidelines:
 2.  If the pull request adds functionality, the docs should be updated.
     Put your new functionality into a function with a docstring, and add
     the feature to the list in README.rst.
-3.  The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and
-    for PyPy. Check <https://travis-ci.com/>{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/pull_requests and make sure that the tests pass for all supported
+3.  The pull request should work for Python 3.7 and 3.8. Check https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/actions to make sure all tests are passing.
     Python versions.
 
 ## Tips
 
-To run a subset of tests:
+To run a subset of tests starting with `test_something` do:
 
 ``` {.shell}
-$ python -m pytest [tests.test](){{ cookiecutter.project_slug }}
+$ python -m pytest -k test_something
 ```
 
 
