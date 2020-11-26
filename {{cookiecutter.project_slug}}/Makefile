@@ -54,7 +54,7 @@ type: ## Run mypy
 	python3 -m mypy {{ cookiecutter.project_slug }} tests
 
 test: ## run tests on every Python version with tox
-	python3 -m pytest --cov={{ cookiecutter.project_slug }} tests
+	python3 -m pytest -cov={{ cookiecutter.project_slug }} tests
 
 docs: ## generate Sphinx HTML documentation, including API docs
 	rm -f docs/{{ cookiecutter.project_slug }}.rst
