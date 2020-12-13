@@ -8,7 +8,7 @@ Installation
 Virtual environment
 -------------------
 
-Before you install any packages it is recommended that you create a virtual environment. You can do this using the built in `venv`_Github module.
+Before you install any packages it is recommended that you create a virtual environment. You can do this using the built in `venv`_ module.
 It is also possible to use the `virtualenv`_ package which can be installed with `pip`_.
 
 .. code-block:: console
@@ -50,7 +50,8 @@ you through the process.
 
 .. _pip: https://pip.pypa.io
 .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
-
+.. _virtualenv: https://virtualenv.pypa.io/en/latest/
+.. _venv: https://docs.python.org/3/library/venv.html
 
 From sources
 ------------
