@@ -20,6 +20,7 @@
 * Free software: {{ cookiecutter.open_source_license }} 
 * Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
 {% endif %}
+* Source code: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
 ## Features
 
